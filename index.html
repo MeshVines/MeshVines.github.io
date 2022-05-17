@@ -1,14 +1,7 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-
-
-<html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0PBTW6X60H"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
@@ -17,206 +10,372 @@
 
 		  gtag('config', 'G-0PBTW6X60H');
 		</script>
-		<title>Meshvines</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MeshVines API</title>
+    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<!-- <li><a href="#one">Who we are</a></li> -->
-							<li><a href="#two">What is meshvines?</a></li>
-							<!--<li><a href="#three">Contact</a></li> -->
-						</ul>
-					</nav>
-				</div>
-			</section>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/style.css">
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Meshvines</h1>
-							<p>Analytics for data-driven winery operation.<br />
-							Delivered as a REST API.</p>
-							<ul class="actions">
-								<li><a href="documentation.html" class="button scrolly">Documentation</a></li>
-							</ul>
-						</div>
-					</section>
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
 
-				<!-- One -->
-				<!--
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Title1</h2>
-									<p>Info 1</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Title2</h2>
-									<p>Info 2</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Title3</h2>
-									<p>Info 3</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
-				-->
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>What is Meshvines?</h2>
-							<p>A REST API for data-driven winery operation.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-microscope"></span>
-									<h3>Wine Fermentation Kinetic Model</h3>
-									<p>The Boulton model (Boulton, 1979) describes the kinetics of juice to wine based on commmonly-used wine yeast strains of <em>Saccharomyces Cerevisiae</em> and has been used on hundreds of fermentations across scale, temperature, yeast strain and initial juice composition.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-stream"></span>
-									<h3>Parameter Estimation</h3>
-									<p>The parameters of the Boulton model are solved for in the time and resource constraints of a REST API.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-temperature-high"></span>
-									<h3>Current and Future Heat and Carbon Dioxide Release</h3>
-									<p>The energy (heat) and carbon dioxide release rates and evolution curves can be estimated from the measured or predicted fermentation rate.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-wind"></span>
-									<h3>Current and Future Ethanol Emissions</h3>
-									<p>The ethanol emissions are estimated from fermentation kinetics (Williams, 1983).</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-calculator"></span>
-									<h3>Total Winery Loads</h3>
-									<p>The fermentation release rates (energy, CO2 and ethanol emissions) can be summed accross multiple concurrent fermentations.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-calculator"></span>
-									<h3>Unit and Density Conversions</h3>
-									<p>Multiple units are supported. Functions are supported to convert between density scales. The density can also be calculated from differential pressure for tanks with two pressure transducers.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="documentation.html" class="button">Documentation</a></li>
-							</ul>
-						</div>
-					</section>
 
-				<!-- Three -->
-				<!--
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Text</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Davis, CA 95618<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">info@meshvines.com</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
 
-			</div>
-		-->
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Meshvines 2022. All rights reserved.</li>
-					</ul>
-				</div>
-			</footer>
+  <!-- START: header -->
+  <header role="banner" class="probootstrap-header">
+    <div class="container-fluid">
+      <!-- <div class="row"> -->
+        <a href="index.html" class="probootstrap-logo">MeshVines<span></span></a>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
+        <div class="mobile-menu-overlay"></div>
 
-	</body>
+        <nav role="navigation" class="probootstrap-nav hidden-xs">
+          <ul class="probootstrap-main-nav">
+            <li><a href="index.html">Home</a></li>
+            <!--<li><a href="blog.html">Blog</a></li>-->
+            <li><a href="documentation.html">API Documentation</a></li>
+            <li><a href="pricing.html">API Pricing</a></li>
+            <!--
+            <li><a href="tour.html">Tour</a></li>
+            <li><a href="login.html">Log in</a></li>
+            <li class="probootstrap-cta"><a href="signup.html">Sign up</a></li>
+          -->
+          </ul>
+          <div class="extra-text visible-xs">
+            <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+            <h5>Social</h5>
+            <ul class="social-buttons">
+              <li><a href="#"><i class="icon-twitter"></i></a></li>
+              <li><a href="#"><i class="icon-facebook"></i></a></li>
+              <li><a href="#"><i class="icon-instagram2"></i></a></li>
+            </ul>
+            <p><small>&copy; Copyright 2022. All Rights Reserved.</small></p>
+          </div>
+        </nav>
+
+        <section class="probootstrap-intro">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <h1 class="probootstrap-animate">MeshVines</h1>
+                <div class="probootstrap-subtitle probootstrap-animate">
+                  <h2>Winery analytics. Delivered as a REST API.</h2>
+                </div>
+                <!--
+                <p class="watch-intro probootstrap-animate"><a href="https://vimeo.com/45830194" class="popup-vimeo">Watch the intro <i class="icon-play2"></i></a></p>
+              -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+      <!-- </div> -->
+    </div>
+
+
+  </header>
+  <!-- END: header -->
+
+  <!-- START: section -->
+  <section class="probootstrap-section probootstrap-feature-first">
+    <div class="container">
+      <div class="row mb70" style="margin-top: -120px;">
+        <div class="col-md-4 probootstrap-animate">
+          <div class="probootstrap-box">
+              <div class="icon"><i class="icon-lab"></i></div>
+              <h3>REST API</h3>
+              <p>A REST API is fast and easy to integrate into any modern software.  Using a propietery parameter estimation algorithm, the measured data can matched to wine kinetic model in less than 3 seconds.</p>
+          </div>
+        </div>
+        <div class="col-md-4 probootstrap-animate">
+          <div class="probootstrap-box">
+              <div class="icon"><i class="icon-lab"></i></div>
+              <h3>Fermentation Modeling</h3>
+              <p>Using a wine kinetic model (Boulton, 1979), valuable information can extracted from the two nearly universal measurements in winemaking: density and temperature.</p>
+          </div>
+        </div>
+        <div class="col-md-4 probootstrap-animate">
+          <div class="probootstrap-box">
+              <div class="icon"><i class="icon-leaf"></i></div>
+              <h3>Sustainability</h3>
+              <p>Combined with other technologies, MeshVines API can enable wineries to adopt sustianable practicies by predicting the future fermentation heat and carbon dioxide release rates.</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4 probootstrap-animate">
+          <p class="text-center">
+            <!--<a href="#" class="btn btn-primary btn-lg btn-block" role="button">Get started</a>-->
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: section -->
+
+
+
+  <!-- START: section -->
+
+  <section class="probootstrap-section probootstrap-section-extra">
+    <div class="container-fluid probootstrap-absolute">
+      <div class="row">
+        <div class="col-md-7 col-md-push-6 probootstrap-animate" data-animate-effect="fadeInRight">
+          <img src="img/meshvines_example.PNG" alt="Free Bootstrap Template by uicookies.com" class="img-responsive shadow-left">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-5 section-heading probootstrap-animate">
+          <h2>Enable data-driven winemaking</h2>
+          <p class="lead">With MeshVines API, measurements of density and temperature can be used to predict fermentation outcomes while there is still time to intervene.  MeshVines API will also enable a winemaker to see "what ifs?".  For example, when is the fermentation estimated to finish if I increase the temperature setpoint by 2, 4 or 6 degrees celcius.  Easily integrate MeshVines into any software to enable better winemaking insights.</p>
+          <!--
+          <blockquote class="probootstrap-quote">
+            <figure class="probootstrap-quote-logo uber">
+             <img src="img/uber.png" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+            </figure>
+            <p>&ldquo;A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
+            <p class="probootstrap-quote-author"><img src="img/person_1.jpg" alt="Free Bootstrap Template by uicookies.com"> Chris Worth, Uber</p>
+          </blockquote>
+        -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- END: section -->
+
+  <!-- START: section -->
+  <!--
+  <section class="probootstrap-section probootstrap-section-extra">
+    <div class="container-fluid probootstrap-absolute">
+      <div class="row">
+        <div class="col-md-8 col-md-pull-2 probootstrap-animate" data-animate-effect="fadeInLeft">
+          <img src="img/grape_hand.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive" width="500" height="500">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-md-push-6 section-heading probootstrap-animate">
+          <h2>Optimize resources</h2>
+          <p class="lead"></p>
+
+
+          <blockquote class="probootstrap-quote">
+            <figure class="probootstrap-quote-logo facebook">
+             <img src="img/facebook.png" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+            </figure>
+            <p>&ldquo;A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
+            <p class="probootstrap-quote-author"><img src="img/person_5.jpg" alt="Free Bootstrap Template by uicookies.com"> Janet Morris, Facebook</p>
+          </blockquote>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+  <!-- END: section -->
+
+  <!-- START: section -->
+  <!--
+  <section class="probootstrap-section probootstrap-section-extra last">
+    <div class="container-fluid probootstrap-absolute">
+      <div class="row">
+        <div class="col-md-7 col-md-push-6 probootstrap-animate" data-animate-effect="fadeInRight">
+          <img src="img/img_showcase_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive shadow-left">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-5 section-heading probootstrap-animate">
+          <h2>We bring emotion to our product</h2>
+          <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+
+          <blockquote class="probootstrap-quote">
+            <figure class="probootstrap-quote-logo twitter">
+             <img src="img/twitter.png" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+            </figure>
+            <p>&ldquo;A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
+            <p class="probootstrap-quote-author"><img src="img/person_7.jpg" alt="Free Bootstrap Template by uicookies.com"> Jessa Sy, Twitter</p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+  <!-- END: section -->
+  <!-- START: section -->
+
+  <section class="probootstrap-section probootstrap-section-colored">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 section-heading mb50 text-center probootstrap-animate">
+          <h2>Features</h2>
+          <p class="lead"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
+          <h3 class="heading-with-icon"><i class="icon-lab"></i> <span>Wine Fermentation Model</span></h3>
+          <p>The Boulton model (Boulton, 1979) describes the kinetics of juice to wine based on commonly used wine yeast strains of <em>Saccharomyces Cerevisiae</em> and has been validated on hundreds of fermentations across all winemaking conditions.</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
+          <h3 class="heading-with-icon"><i class="icon-calculator"></i> <span>Fermentation Release Rates</span></h3>
+          <p>The current and future energy (as heat) and carbon dioxide release rates are calculated based on the fermentation rate and stoichemetric equation of yeast metabolism of sugar.  This data can be used to manage refrigeration loads.</p>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
+          <h3 class="heading-with-icon"><i class="icon-warning"></i> <span>Detect Problem Fermentations</span></h3>
+          <p>MeshVines API is another tool in the winemaker's toolbox to help detect problem fermentations.  MeshVines API can also be used to predict fermentation outcomes from process changes such as a temperature setpoint change.</p>
+        </div>
+        <div class="clearfix visible-md-block"></div>
+        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
+          <h3 class="heading-with-icon"><i class="icon-cloud-upload"></i> <span>Easy Integration</span></h3>
+          <p>As a REST API, MeshVines API is easy to integrate into other modern software.  See the documentation for details on API endpoints and JSON message formats.</p>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
+            <h3 class="heading-with-icon"><i class="icon-rocket"></i> <span>Fast</span></h3>
+          <p>Built in the cloud, MeshVines API spends no more than 3 seconds matching the measured data to the Boulton model using a propietery algorithm.  This makes applications built on MeshVines API fast and responsive. </p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
+          <h3 class="heading-with-icon"><i class="icon-equalizer"></i> <span>Flexible Units</span></h3>
+          <p>Use MeshVines API built-in conversion functions to enable commonly used winemaking units such as Brix, Specific Gravity, Baume, Oeschle, Plato and Kg/m3</p>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- END: section -->
+  <!--
+  <section class="probootstrap-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 section-heading mb50 text-center">
+          <h2>Our Products</h2>
+          <p class="lead">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <h3 class="mb30">We bring emotion</h3>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <h3 class="mb30">We guide companies</h3>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <h3 class="mb30">We design extraordinary</h3>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+  <!-- END: section -->
+
+  <!-- START: footer -->
+  <footer role="contentinfo" class="probootstrap-footer">
+    <div class="container">
+      <!--
+      <div class="row">
+        <div class="col-md-4">
+          <div class="probootstrap-footer-widget">
+            <h3>About</h3>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="probootstrap-footer-widget">
+            <h3>Blog</h3>
+            <ul class="probootstrap-blog-list">
+              <li>
+                <a href="#">
+                  <figure><img src="img/img_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></figure>
+                  <div class="text">
+                    <h4>River named Duden flows</h4>
+                    <p>A small river named Duden flows by their place</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure><img src="img/img_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></figure>
+                  <div class="text">
+                    <h4>River named Duden flows</h4>
+                    <p>A small river named Duden flows by their place</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure><img src="img/img_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></figure>
+                  <div class="text">
+                    <h4>River named Duden flows</h4>
+                    <p>A small river named Duden flows by their place</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      -->
+        <div class="col-md-4">
+          <div class="probootstrap-footer-widget">
+            <h3>Contact</h3>
+            <ul class="probootstrap-contact-info">
+              <li><i class="icon-location2"></i> <span>Davis, CA 95616</span></li>
+              <li><i class="icon-mail"></i><span>james@meshvines.com</span></li>
+              <li><i class="icon-phone2"></i><span>+925 353 0820</span></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="row mt40">
+        <div class="col-md-12 text-center">
+          <!--
+          <ul class="probootstrap-footer-social">
+            <li><a href=""><i class="icon-twitter"></i></a></li>
+            <li><a href=""><i class="icon-facebook"></i></a></li>
+            <li><a href=""><i class="icon-instagram2"></i></a></li>
+          </ul>
+        -->
+          <p>
+            <small>&copy; 2022 <a href="https://meshvines.com/" target="_blank">MeshVines</a>. All Rights Reserved. <br> Designed &amp; Developed by <a href="https://uicookies.com/" target="_blank">uicookies.com</a></small>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END: footer -->
+
+
+
+  <script src="js/scripts.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/custom.js"></script>
+  </body>
 </html>
