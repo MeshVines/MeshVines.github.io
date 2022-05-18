@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>uiCookies:Sublime &mdash; Free Bootstrap Theme, Free Responsive Bootstrap Website Template</title>
+    <title>MeshVines</title>
     <meta name="description" content="Free Bootstrap Theme by uicookies.com">
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
 
@@ -11,11 +11,14 @@
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
-
+    <link rel="stylesheet" href="css/style.css">
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
+    <!--Importing Plotly-->
+    <script src="js/script.js" defer></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   </head>
   <body>
 
@@ -25,7 +28,7 @@
   <header role="banner" class="probootstrap-header">
     <div class="container-fluid">
       <!-- <div class="row"> -->
-        <a href="index.html" class="probootstrap-logo">MeshVines<span>.</span></a>
+        <a href="index.html" class="probootstrap-logo">MeshVines<span></span></a>
 
         <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
         <div class="mobile-menu-overlay"></div>
@@ -33,9 +36,9 @@
         <nav role="navigation" class="probootstrap-nav hidden-xs">
           <ul class="probootstrap-main-nav">
             <li><a href="index.html">Home</a></li>
-            <!--<li><a href="blog.html">Blog</a></li>-->
-            <li><a href="documentation.html">Documentation</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="documentation.html">API Documentation</a></li>
+            <li><a href="blog.html">API Demo</a></li>
+            <li><a href="pricing.html">API Pricing</a></li>
             <!--
             <li><a href="tour.html">Tour</a></li>
             <li><a href="login.html">Log in</a></li>
@@ -44,13 +47,15 @@
           </ul>
           <div class="extra-text visible-xs">
             <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+            <!--
             <h5>Social</h5>
             <ul class="social-buttons">
               <li><a href="#"><i class="icon-twitter"></i></a></li>
               <li><a href="#"><i class="icon-facebook"></i></a></li>
               <li><a href="#"><i class="icon-instagram2"></i></a></li>
             </ul>
-            <p><small>&copy; Copyright 2017. All Rights Reserved.</small></p>
+          -->
+            <p><small>&copy; Copyright 2022. All Rights Reserved.</small></p>
           </div>
         </nav>
 
@@ -58,9 +63,9 @@
           <div class="container">
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
-                <h1 class="probootstrap-animate">MeshVines Articles</h1>
+                <h1 class="probootstrap-animate">MeshVines API Demo</h1>
                 <div class="probootstrap-subtitle probootstrap-animate">
-                  <h2>Resources for all things winery technology</h2>
+                  <h2>Try out MeshVines API for free</h2>
                 </div>
                 <!--<p class="watch-intro probootstrap-animate"><a href="https://vimeo.com/45830194" class="popup-vimeo">Watch the intro <i class="icon-play2"></i></a></p>-->
               </div>
@@ -78,80 +83,148 @@
   <!-- START: section -->
   <section class="probootstrap-section">
     <div class="container">
-
+      <h1>MeshVines API Testing</h1>
       <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
-          <div class="probootstrap-block-image">
-            <figure><img src="img/img_3.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
-            <div class="text">
-              <span class="date">June 29, 2017</span>
-              <h3><a href="#">Laboriosam Quod Dignissimos</a></h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
-              <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
-          <div class="probootstrap-block-image">
-            <figure><img src="img/img_2.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
-            <div class="text">
-              <span class="date">June 29, 2017</span>
-              <h3><a href="#">Laboriosam Quod Dignissimos</a></h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
-              <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix visible-sm-block"></div>
-        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
-          <div class="probootstrap-block-image">
-            <figure><img src="img/img_3.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
-            <div class="text">
-              <span class="date">June 29, 2017</span>
-              <h3><a href="#">Laboriosam Quod Dignissimos</a></h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
-              <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix visible-md-block"></div>
-        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
-          <div class="probootstrap-block-image">
-            <figure><img src="img/img_2.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
-            <div class="text">
-              <span class="date">June 29, 2017</span>
-              <h3><a href="#">Laboriosam Quod Dignissimos</a></h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
-              <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix visible-sm-block"></div>
-        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
-          <div class="probootstrap-block-image">
-            <figure><img src="img/img_3.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
-            <div class="text">
-              <span class="date">June 29, 2017</span>
-              <h3><a href="#">Laboriosam Quod Dignissimos</a></h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
-              <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
-          <div class="probootstrap-block-image">
-            <figure><img src="img/img_2.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
-            <div class="text">
-              <span class="date">June 29, 2017</span>
-              <h3><a href="#">Laboriosam Quod Dignissimos</a></h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
-              <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix visible-sm-block"></div>
-      </div>
 
+          <div class="col-sm-8">
+            <div id="box1" style="width: 600px; height: 600px">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <label for="w3review">JSON Body:</label>
+            <textarea id="w3review" name="w3review" rows="17" cols="50">
+{
+  "DataPoints":[{
+  "Timestamp":"05-Nov-2019 18:15:00",
+  "Brix":23.09,
+  "Temperature":13.97},
+  {
+  "Timestamp":"05-Nov-2019 23:15:00",
+  "Brix":23.13,
+  "Temperature":14.91},
+  {
+  "Timestamp":"06-Nov-2019 04:15:00",
+  "Brix":23.1,
+  "Temperature":14.97},
+  {
+  "Timestamp":"06-Nov-2019 09:15:00",
+  "Brix":23.02,
+  "Temperature":15.06},
+  {
+  "Timestamp":"06-Nov-2019 14:15:00",
+  "Brix":22.69,
+  "Temperature":14.82},
+  {
+  "Timestamp":"06-Nov-2019 19:15:00",
+  "Brix":22.43,
+  "Temperature":13.32},
+  {
+  "Timestamp":"07-Nov-2019 00:15:00",
+  "Brix":22.43,
+  "Temperature":15.02},
+  {
+  "Timestamp":"07-Nov-2019 05:15:00",
+  "Brix":22.3,
+  "Temperature":15.04},
+  {
+  "Timestamp":"07-Nov-2019 10:15:00",
+  "Brix":21.96,
+  "Temperature":14.96},
+  {
+  "Timestamp":"07-Nov-2019 15:15:00",
+  "Brix":21.61,
+  "Temperature":15.04},
+  {
+  "Timestamp":"07-Nov-2019 20:15:00",
+  "Brix":21.29,
+  "Temperature":14.99},
+  {
+  "Timestamp":"08-Nov-2019 01:15:00",
+  "Brix":20.98,
+  "Temperature":15.02},
+  {
+  "Timestamp":"08-Nov-2019 06:15:00",
+  "Brix":20.51,
+  "Temperature":15.01},
+  {
+  "Timestamp":"08-Nov-2019 11:15:00",
+  "Brix":19.9,
+  "Temperature":14.97},
+  {
+  "Timestamp":"08-Nov-2019 16:15:00",
+  "Brix":19.28,
+  "Temperature":15},
+  {
+  "Timestamp":"08-Nov-2019 21:15:00",
+  "Brix":18.73,
+  "Temperature":15.04},
+  {
+  "Timestamp":"09-Nov-2019 02:15:00",
+  "Brix":18.19,
+  "Temperature":15.04},
+  {
+  "Timestamp":"09-Nov-2019 07:15:00",
+  "Brix":17.52,
+  "Temperature":15.04},
+  {
+  "Timestamp":"09-Nov-2019 12:15:00",
+  "Brix":16.72,
+  "Temperature":14.97},
+  {
+  "Timestamp":"09-Nov-2019 17:15:00",
+  "Brix":15.99,
+  "Temperature":15.01},
+  {
+  "Timestamp":"09-Nov-2019 22:15:00",
+  "Brix":15.4,
+  "Temperature":15.02},
+  {
+  "Timestamp":"10-Nov-2019 03:15:00",
+  "Brix":14.83,
+  "Temperature":15.03}],
+  "YeastTime":"05-Nov-2019 18:15:00",
+  "Smoothing":1,
+  "SSRThreshold":0.3,
+  "SearchSpaceSize":200,
+  "Biomass":{
+  "A":0.00024,
+  "B":1E-6,
+  "Type":"N"},
+  "Nitrogen":{
+  "A":0.0001,
+  "B":0.0003,
+  "Type":"U"},
+  "Brix":{
+  "A":23.09,
+  "B":0.01,
+  "Type":"N"},
+  "Maintenance":{
+  "A":0.05,
+  "B":0.2,
+  "Type":"U"},
+  "Lag":{
+  "A":10,
+  "B":20,
+  "Type":"U"},
+  "Viability":{
+  "A":40,
+  "B":60,
+  "Type":"U"},
+  "EthInh":{
+  "A":0.025,
+  "B":0.045,
+  "Type":"U"}
+}
+            </textarea>
+          </div>
+      </div>
+      <div class="row">
+        <label for="apikey2">API Key:</label>
+
+        <input type="text" id="apikey2" name="apikey" required
+               minlength="4" maxlength="80" size="25">
+        <input id="clickMe" type="button" value="clickme" onclick="doFunction();" />
+      </div>
       <div class="row mb50">
         <div class="col-md-12 section-heading text-center">
           <h2>Frequently Ask Question</h2>
@@ -159,18 +232,18 @@
       </div>
       <div class="row">
         <div class="col-md-6">
-          <h3>What is sublime?</h3>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          <h3>Can I use this template?</h3>
-          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-          <h3>What is the license?</h3>
-          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          <h3>How do I get an API Key?</h3>
+          <p>A completely free API Key can be acquired <a href="https://rapidapi.com/jjnel/api/meshvines1/">here</a></p>
+          <h3>What endpoint does this use?</h3>
+          <p>Currently, /boultonmodel/mdgs is used</p>
+          <h3>What is the JSON Body format?</h3>
+          <p>The documentation describes the JSON Body format in detail for the /boultonmodel/mdgs enpoint</p>
         </div>
         <div class="col-md-6">
-          <h3>Is it free?</h3>
-          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-          <h3>Do you do a custom work?</h3>
-          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          <h3>Why am I getting an error?</h3>
+          <p>The two most common error are 1) you are exceeding the request rate of the free plan or 2) you need to descrease "SearchSpaceSize" so the server does not timeout</p>
+          <h3>How can I integrate MeshVines API into my infrastructure?</h3>
+          <p>Contact our team at <a href = "mailto: james@meshvines.com">james@meshvines.com</a></p>
         </div>
       </div>
     </div>
@@ -182,6 +255,7 @@
   <!-- START: footer -->
   <footer role="contentinfo" class="probootstrap-footer">
     <div class="container">
+      <!--
       <div class="row">
         <div class="col-md-4">
           <div class="probootstrap-footer-widget">
@@ -224,13 +298,14 @@
             </ul>
           </div>
         </div>
+      -->
         <div class="col-md-4">
           <div class="probootstrap-footer-widget">
             <h3>Contact</h3>
             <ul class="probootstrap-contact-info">
-              <li><i class="icon-location2"></i> <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
-              <li><i class="icon-mail"></i><span>info@domain.com</span></li>
-              <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
+              <li><i class="icon-location2"></i> <span>Davis, CA 95616</span></li>
+              <li><i class="icon-mail"></i><span>james@meshvines.com</span></li>
+              <li><i class="icon-phone2"></i><span>+925 353 0820</span></li>
             </ul>
 
           </div>
@@ -238,13 +313,15 @@
       </div>
       <div class="row mt40">
         <div class="col-md-12 text-center">
+          <!--
           <ul class="probootstrap-footer-social">
             <li><a href=""><i class="icon-twitter"></i></a></li>
             <li><a href=""><i class="icon-facebook"></i></a></li>
             <li><a href=""><i class="icon-instagram2"></i></a></li>
           </ul>
+        -->
           <p>
-            <small>&copy; 2017 <a href="https://uicookies.com/" target="_blank">uiCookies:Sublime</a>. All Rights Reserved. <br> Designed &amp; Developed by <a href="https://uicookies.com/" target="_blank">uicookies.com</a> Demo Images: Unsplash</small>
+            <small>&copy; 2022 <a href="https://meshvines.com/" target="_blank">MeshVines</a>. All Rights Reserved. <br> Designed &amp; Developed by <a href="https://uicookies.com/" target="_blank">uicookies.com</a></small>
           </p>
 
         </div>
