@@ -10,6 +10,7 @@
 
 		  gtag('config', 'G-0PBTW6X60H');
 		</script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MeshVines API</title>
@@ -27,6 +28,12 @@
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
+    <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
+    	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+    	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
   </head>
   <body>
 
@@ -43,10 +50,12 @@
 
         <nav role="navigation" class="probootstrap-nav hidden-xs">
           <ul class="probootstrap-main-nav">
+            <!--
             <li><a href="index.html">Home</a></li>
             <li><a href="documentation.html">API Documentation</a></li>
             <li><a href="demo.html">API Demo</a></li>
             <li><a href="pricing.html">API Pricing</a></li>
+            -->
             <!--
             <li><a href="tour.html">Tour</a></li>
             <li><a href="login.html">Log in</a></li>
@@ -69,13 +78,40 @@
           <div class="container">
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
-                <h1 class="probootstrap-animate">MeshVines</h1>
+                <h1 class="probootstrap-animate">MeshVines API</h1>
                 <div class="probootstrap-subtitle probootstrap-animate">
-                  <h2>Winery analytics. Delivered as a REST API.</h2>
+                  <h2>Fermentation analytics for modern winemaking.  Predict fermentation trajectories, heat release rates, outcome of interventions and more!</h2>
                 </div>
-                <!--
-                <p class="watch-intro probootstrap-animate"><a href="https://vimeo.com/45830194" class="popup-vimeo">Watch the intro <i class="icon-play2"></i></a></p>
-              -->
+                <center>
+                <div id="mc_embed_signup">
+              <form action="https://meshvines.us14.list-manage.com/subscribe/post?u=53cfa42ac9c48a8f88d1763c3&amp;id=40b4beaaef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                <h2>Subscribe to stay updated</h2>
+              <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+              </label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+              </div>
+                <div id="mce-responses" class="clear foot">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_53cfa42ac9c48a8f88d1763c3_40b4beaaef" tabindex="-1" value=""></div>
+                      <div class="optionalParent">
+                          <div class="clear foot">
+                              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                              <!--
+                              <p class="brandingLogo"><a href="http://eepurl.com/h5sunP" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_light_dtp.svg"></a></p>
+                            -->
+                          </div>
+                      </div>
+                  </div>
+              </form>
+              </div>
+            </center>
+              <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
               </div>
             </div>
           </div>
@@ -83,7 +119,6 @@
 
       <!-- </div> -->
     </div>
-
 
   </header>
   <!-- END: header -->
@@ -94,16 +129,16 @@
       <div class="row mb70" style="margin-top: -120px;">
         <div class="col-md-4 probootstrap-animate">
           <div class="probootstrap-box">
-              <div class="icon"><i class="icon-lab"></i></div>
+              <div class="icon"><i class="icon-cloud-upload"></i></div>
               <h3>REST API</h3>
-              <p>A REST API is fast and easy to integrate into any modern software.  Using a propietery parameter estimation algorithm, the measured data can matched to wine kinetic model in less than 3 seconds.</p>
+              <p>A REST API is fast and easy to integrate into any modern software.  Using a novel nonlinear parameter estimation algorithm, the measured data is matched to a wine kinetic model in less than 3 seconds.</p>
           </div>
         </div>
         <div class="col-md-4 probootstrap-animate">
           <div class="probootstrap-box">
               <div class="icon"><i class="icon-lab"></i></div>
               <h3>Fermentation Modeling</h3>
-              <p>Using a wine kinetic model (Boulton, 1979), valuable information can extracted from the two nearly universal measurements in winemaking: density and temperature.</p>
+              <p>Using a wine kinetic model (Boulton, 1979), valuable information is extracted from the two nearly universal measurements in winemaking: density and temperature.</p>
           </div>
         </div>
         <div class="col-md-4 probootstrap-animate">
@@ -141,7 +176,7 @@
       <div class="row">
         <div class="col-lg-5 col-md-5 section-heading probootstrap-animate">
           <h2>Enable data-driven winemaking</h2>
-          <p class="lead">With MeshVines API, measurements of density and temperature can be used to predict fermentation outcomes while there is still time to intervene.  MeshVines API will also enable a winemaker to see "what ifs?".  For example, when is the fermentation estimated to finish if I increase the temperature setpoint by 2, 4 or 6 degrees celcius.  Easily integrate MeshVines into any software to enable better winemaking insights.</p>
+          <p class="lead">With MeshVines API, measurements of density and temperature can be used to predict fermentation outcomes while there is still time to intervene.  MeshVines API will also enable a winemaker to see "what ifs?".  For example, when is the fermentation estimated to finish if I increase the temperature setpoint by 2, 4 or 6 degrees celcius?  Easily integrate MeshVines API into any software to enable winemaking insights.</p>
           <!--
           <blockquote class="probootstrap-quote">
             <figure class="probootstrap-quote-logo uber">
@@ -232,16 +267,16 @@
       <div class="row">
         <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
           <h3 class="heading-with-icon"><i class="icon-lab"></i> <span>Wine Fermentation Model</span></h3>
-          <p>The Boulton model (Boulton, 1979) describes the kinetics of juice to wine based on commonly used wine yeast strains of <em>Saccharomyces Cerevisiae</em> and has been validated on hundreds of fermentations across all winemaking conditions.</p>
+          <p>The Boulton model (Boulton, 1979) describes the kinetics of juice to wine based on commonly used wine yeast strains of <em>Saccharomyces Cerevisiae</em> and has been validated on many commercial fermentations across nearly all winemaking conditions.</p>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
           <h3 class="heading-with-icon"><i class="icon-calculator"></i> <span>Fermentation Release Rates</span></h3>
-          <p>The current and future energy (as heat) and carbon dioxide release rates are calculated based on the fermentation rate and stoichemetric equation of yeast metabolism of sugar.  This data can be used to manage refrigeration loads.</p>
+          <p>The current and future energy (as heat) and carbon dioxide release rates are calculated based on the fermentation rate and stoichemetric equation of yeast metabolism of sugar.  This information can be used to manage refrigeration loads.</p>
         </div>
         <div class="clearfix visible-sm-block"></div>
         <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
           <h3 class="heading-with-icon"><i class="icon-warning"></i> <span>Detect Problem Fermentations</span></h3>
-          <p>MeshVines API is another tool in the winemaker's toolbox to help detect problem fermentations.  MeshVines API can also be used to predict fermentation outcomes from process changes such as a temperature setpoint change.</p>
+          <p>MeshVines API helps winemakers diagnose stuck or sluggish fermentations while there is still time to intervene.  MeshVines API can also be used to predict fermentation outcomes from process changes such as a temperature change, nitrogen addition or reinoculation.</p>
         </div>
         <div class="clearfix visible-md-block"></div>
         <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
@@ -251,11 +286,11 @@
         <div class="clearfix visible-sm-block"></div>
         <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
             <h3 class="heading-with-icon"><i class="icon-rocket"></i> <span>Fast</span></h3>
-          <p>Built in the cloud, MeshVines API spends no more than 3 seconds matching the measured data to the Boulton model using a propietery algorithm.  This makes applications built on MeshVines API fast and responsive. </p>
+          <p>Built in the cloud, MeshVines API spends no more than 3 seconds matching the measured data to the Boulton model using a novel nonlinear parameter estimation algorithm.  This makes applications built with MeshVines API fast and responsive. </p>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
           <h3 class="heading-with-icon"><i class="icon-equalizer"></i> <span>Flexible Units</span></h3>
-          <p>Use MeshVines API built-in conversion functions to enable commonly used winemaking units such as Brix, Specific Gravity, Baume, Oeschle, Plato and Kg/m3</p>
+          <p>Use MeshVines API's built-in conversion functions to enable commonly used winemaking units such as Brix, Specific Gravity, Baume, Oeschle and Kg/m3</p>
         </div>
         <div class="clearfix visible-sm-block"></div>
       </div>
@@ -345,7 +380,7 @@
           <div class="probootstrap-footer-widget">
             <h3>Contact</h3>
             <ul class="probootstrap-contact-info">
-              <li><i class="icon-location2"></i> <span>Davis, CA 95616</span></li>
+              <li><i class="icon-location2"></i> <span>Davis, CA 95618</span></li>
               <li><i class="icon-mail"></i><span>james@meshvines.com</span></li>
               <li><i class="icon-phone2"></i><span>+925 353 0820</span></li>
             </ul>
@@ -363,7 +398,7 @@
           </ul>
         -->
           <p>
-            <small>&copy; 2022 <a href="https://meshvines.com/" target="_blank">MeshVines</a>. All Rights Reserved. <br> Designed &amp; Developed by <a href="https://uicookies.com/" target="_blank">uicookies.com</a></small>
+            <small>&copy; 2022 <a href="https://meshvines.com/" target="_blank">MeshVines, LLC</a>. All Rights Reserved. <br> Designed &amp; Developed by <a href="https://uicookies.com/" target="_blank">uicookies.com</a></small>
           </p>
 
         </div>
